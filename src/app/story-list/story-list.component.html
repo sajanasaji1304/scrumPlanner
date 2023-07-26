@@ -1,0 +1,9 @@
+<div *ngIf="stories.length > 0">
+    <h2>All Stories:</h2>
+    <ul>
+        <li *ngFor="let story of stories">{{ story.name }} ({{ story.points }} points)</li>
+    </ul>
+</div>
+<div *ngIf="stories.length === 0">
+    <p>No stories available.</p>
+</div>
